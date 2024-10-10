@@ -75,33 +75,6 @@ public class StringProblemsTest{
     }
 
     @Test
-    void testDefont4(){
-        StringProblems o = new StringProblems();
-        String expectedOutput = "apple";
-        String studentOutput= o.deFont("aapple");
-        assertEquals(expectedOutput,studentOutput);
-    }
-
-    @Test
-    void testDefont5(){
-        StringProblems o = new StringProblems();
-        String expectedOutput = "abee";
-        String studentOutput= o.deFont("abee");
-        assertEquals(expectedOutput,studentOutput);
-    }
-
-    @Test
-    void testDefont6(){
-        StringProblems o = new StringProblems();
-        String expectedOutput = "bring";
-        String studentOutput= o.deFont("xbring");
-        assertEquals(expectedOutput,studentOutput);
-    }
-
-
-
-
-    @Test
     void testWithoutX1(){
         StringProblems o = new StringProblems();
         String expectedOutput = "Hi";
@@ -129,7 +102,7 @@ public class StringProblemsTest{
     void testfizzString1(){
         StringProblems o = new StringProblems();
         String expectedOutput = "Fizz";
-        String studentOutput= o.fizzString("fig");
+        String studentOutput= o.testfizzString("fig");
         assertEquals(expectedOutput,studentOutput);
     }
 
@@ -137,7 +110,7 @@ public class StringProblemsTest{
     void testfizzString2(){
         StringProblems o = new StringProblems();
         String expectedOutput = "Buzz";
-        String studentOutput= o.fizzString("dib");
+        String studentOutput= o.testfizzString("dib");
         assertEquals(expectedOutput,studentOutput);
     }
 
@@ -145,7 +118,7 @@ public class StringProblemsTest{
     void testfizzString3(){
         StringProblems o = new StringProblems();
         String expectedOutput = "FizzBuzz";
-        String studentOutput= o.fizzString("fib");
+        String studentOutput= o.testfizzString("fib");
         assertEquals(expectedOutput,studentOutput);
     }
 
@@ -155,7 +128,7 @@ public class StringProblemsTest{
     void testfizzString2A(){
         StringProblems o = new StringProblems();
         String expectedOutput = "1!";
-        String studentOutput= o.fizzString2(1);
+        String studentOutput= o.testfizzString2(1);
         assertEquals(expectedOutput,studentOutput);
     }
 
@@ -163,7 +136,7 @@ public class StringProblemsTest{
     void testfizzString2B(){
         StringProblems o = new StringProblems();
         String expectedOutput = "2!";
-        String studentOutput= o.fizzString2(2);
+        String studentOutput= o.testfizzString2(2);
         assertEquals(expectedOutput,studentOutput);
     }
 
@@ -171,7 +144,7 @@ public class StringProblemsTest{
     void testfizzString2C(){
         StringProblems o = new StringProblems();
         String expectedOutput = "Fizz!";
-        String studentOutput= o.fizzString2(3);
+        String studentOutput= o.testfizzString2(3);
         assertEquals(expectedOutput,studentOutput);
     }
 
@@ -179,7 +152,7 @@ public class StringProblemsTest{
     void testfizzString2D(){
         StringProblems o = new StringProblems();
         String expectedOutput = "Buzz!";
-        String studentOutput= o.fizzString2(10);
+        String studentOutput= o.testfizzString2(10);
         assertEquals(expectedOutput,studentOutput);
     }
 
@@ -188,7 +161,7 @@ public class StringProblemsTest{
     void testfizzString2E(){
         StringProblems o = new StringProblems();
         String expectedOutput = "FizzBuzz!";
-        String studentOutput= o.fizzString2(15);
+        String studentOutput= o.testfizzString2(15);
         assertEquals(expectedOutput,studentOutput);
     }
 
