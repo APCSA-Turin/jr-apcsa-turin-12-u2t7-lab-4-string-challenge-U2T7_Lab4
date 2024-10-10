@@ -8,10 +8,7 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-        if (x.substring(x.length()-3,x.length()).equals("ly")){
-            return true;
-        }
-        return false;
+        return x.endsWith("ly");
     }
 
 
@@ -22,10 +19,10 @@ public class StringProblems{
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
-        int L=s1.length()-1
+        int L=s1.length()-1;
         if(s1.regionMatches(L,s2,0,1)){
-            s1-=s1.charAt(L)
-            return 
+            s1=s1.substring(0,L);
+            return s1+s2;
         }
         return s1+s2;
     }
@@ -37,8 +34,8 @@ public class StringProblems{
     // deFront("java") → "va"
     // deFront("away") → "aay"
     public String deFont(String s1){
-        //implement code here
-        return "";
+        
+        return s1.substring(2);
     }
 
     
@@ -49,7 +46,13 @@ public class StringProblems{
     // withoutX("xHi") → "Hi"
     // withoutX("Hxix") → "Hxi"
     public String withoutX(String s1){
-        return "";
+        if(s1.startsWith("x")){
+            s1=s1.replaceFirst("x","");
+        }
+        if(s1.endsWith("x")){
+            s1=s1.substring(0,s1.length()-1);
+        }
+        return s1;
     }
 
     // Given a string str, if the string starts with "f" return "Fizz".
@@ -60,6 +63,17 @@ public class StringProblems{
     // fizzString("dib") → "Buzz"
     // fizzString("fib") → "FizzBuzz"
     public String fizzString(String s1){
+        boolean x=s1.endsWith(b);
+        boolean y=s1.startsWith(f);
+        if(x&&y){
+            return "FizzBuzz";
+        }
+        if(x){
+            return "Buzz";
+        }
+        if(y){
+            return "Fizz";
+        }
         return "";
     }
 
