@@ -8,8 +8,7 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-            //implement code here
-        return fax.endsWith("ly");
+        return x.endsWith("ly");
     }
 
 
@@ -81,7 +80,7 @@ if(s1.startsWith("x")){
         if(y){
             return "Fizz";
         }
-        return "";
+        return s1;
     }
 
     // Given an int n, return the string form of the number followed 
@@ -103,6 +102,6 @@ if(s1.startsWith("x")){
         if (x%3==0){
             return "Fizz1"
         }
-        return x+!;
+        return x+"!";
     }
 }
