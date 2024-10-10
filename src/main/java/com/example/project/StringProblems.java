@@ -1,8 +1,8 @@
+package com.example.project;
+
 public class StringProblems{
     //empty constructor
     public StringProblems(){}
-
-
     // Given a string, return true if it ends in "ly".
     // endsLy("oddly") → true
     // endsLy("y") → false
