@@ -98,14 +98,14 @@ if(s1.startsWith("x")){
     // fizzString2(2) → "2!"
     // fizzString2(3) → "Fizz!"
     public String fizzString2(int x){
-        if ((x%3==0)&(x%5)){
-            return "FizzBuzz!"
+        if ((x%3==0)&(x%5==0)){
+            return "FizzBuzz!";
         }
         if (x%5==0){
-            return "Buzz!"
+            return "Buzz!";
         }
         if (x%3==0){
-            return "Fizz!"
+            return "Fizz!";
         }
         return x+"!";
     }
