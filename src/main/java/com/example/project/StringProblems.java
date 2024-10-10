@@ -8,7 +8,8 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-        return x.endsWith("ly");
+            //implement code here
+        return fax.endsWith("ly");
     }
 
 
@@ -34,10 +35,10 @@ public class StringProblems{
     // deFront("java") → "va"
     // deFront("away") → "aay"
     public String deFont(String s1){
+        String NS=s1.substring(2);
         if (s1.indexOf("b")==1) {
             NS="b"+NS;
         }
-        String NS=s1.substring(2);
         if(s1.startsWith("a")){
             NS="a"+NS;
         }
@@ -52,7 +53,7 @@ public class StringProblems{
     // withoutX("xHi") → "Hi"
     // withoutX("Hxix") → "Hxi"
     public String withoutX(String s1){
-        if(s1.startsWith("x")){
+if(s1.startsWith("x")){
             s1=s1.replaceFirst("x","");
         }
         if(s1.endsWith("x")){
@@ -69,8 +70,8 @@ public class StringProblems{
     // fizzString("dib") → "Buzz"
     // fizzString("fib") → "FizzBuzz"
     public String fizzString(String s1){
-        boolean x=s1.endsWith(b);
-        boolean y=s1.startsWith(f);
+        boolean x=s1.endsWith("b");
+        boolean y=s1.startsWith("f");
         if(x&&y){
             return "FizzBuzz";
         }
@@ -93,9 +94,15 @@ public class StringProblems{
     // fizzString2(2) → "2!"
     // fizzString2(3) → "Fizz!"
     public String fizzString2(int x){
-        if (x%3==0){
-            return"Fizz!";
+        if ((x%3==0)&(x%5)){
+            return "FizzBuzz!"
         }
-        return x+"!";
+        if (x%5==0){
+            return "Buzz!"
+        }
+        if (x%3==0){
+            return "Fizz1"
+        }
+        return x+!;
     }
 }
