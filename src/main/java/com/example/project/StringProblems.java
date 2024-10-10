@@ -8,7 +8,9 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-            //implement code here
+        if (x.substring(x.length()-3,x.length()).equals("ly")){
+            return true;
+        }
         return false;
     }
 
@@ -20,8 +22,12 @@ public class StringProblems{
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
-        //implement code here
-        return "";
+        int L=s1.length()-1
+        if(s1.regionMatches(L,s2,0,1)){
+            s1-=s1.charAt(L)
+            return 
+        }
+        return s1+s2;
     }
 
     // Given a string, return a version without the first 2 chars. 
