@@ -34,10 +34,10 @@ public class StringProblems{
     // deFront("java") → "va"
     // deFront("away") → "aay"
     public String deFont(String s1){
+        String NS=s1.substring(2);
         if (s1.indexOf("b")==1) {
             NS="b"+NS;
         }
-        String NS=s1.substring(2);
         if(s1.startsWith("a")){
             NS="a"+NS;
         }
@@ -69,8 +69,8 @@ public class StringProblems{
     // fizzString("dib") → "Buzz"
     // fizzString("fib") → "FizzBuzz"
     public String fizzString(String s1){
-        boolean x=s1.endsWith(b);
-        boolean y=s1.startsWith(f);
+        boolean x=s1.endsWith("b");
+        boolean y=s1.startsWith("f");
         if(x&&y){
             return "FizzBuzz";
         }
