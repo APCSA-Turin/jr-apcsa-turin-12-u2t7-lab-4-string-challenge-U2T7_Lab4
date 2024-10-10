@@ -34,8 +34,14 @@ public class StringProblems{
     // deFront("java") → "va"
     // deFront("away") → "aay"
     public String deFont(String s1){
-        
-        return s1.substring(2);
+        if (s1.indexOf("b")==1) {
+            NS="b"+NS;
+        }
+        String NS=s1.substring(2);
+        if(s1.startsWith("a")){
+            NS="a"+NS;
+        }
+        return NS;
     }
 
     
@@ -87,6 +93,9 @@ public class StringProblems{
     // fizzString2(2) → "2!"
     // fizzString2(3) → "Fizz!"
     public String fizzString2(int x){
-        return "";
+        if (x%3==0){
+            return"Fizz!";
+        }
+        return x+"!";
     }
 }
