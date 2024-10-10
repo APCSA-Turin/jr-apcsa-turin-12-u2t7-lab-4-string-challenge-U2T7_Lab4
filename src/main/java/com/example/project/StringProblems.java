@@ -8,7 +8,8 @@ public class StringProblems{
     // endsLy("y") → false
     // endsLy("oddy") → false
     public boolean endsLy(String x){
-        return x.endsWith("ly");
+            //implement code here
+        return  x.endsWith("ly");
     }
 
 
@@ -19,7 +20,7 @@ public class StringProblems{
     // conCat("dog", "cat") → "dogcat"
     // conCat("abc", "") → "abc"
     public String conCat(String s1, String s2){
-        int L=s1.length()-1;
+int L=s1.length()-1;
         if(s1.regionMatches(L,s2,0,1)){
             s1=s1.substring(0,L);
             return s1+s2;
@@ -100,7 +101,7 @@ if(s1.startsWith("x")){
             return "Buzz!"
         }
         if (x%3==0){
-            return "Fizz1"
+            return "Fizz!"
         }
         return x+"!";
     }
